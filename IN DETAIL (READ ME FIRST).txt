@@ -1,0 +1,121 @@
+First of all- THANK YOU for this opportunity
+
+I have developed the User Feedback System as a full-stack web application using React for the frontend, Node.js + Express for the backend, and MongoDB Atlas as the database. The goal of this system is to allow users to easily submit feedback and view all submitted feedbacks grouped by their type (Suggestion, Bug Report, or Feature Request).
+
+------------------------------------------------------------------------------------------------------------------------------------------
+
+🔧 Tech Stack I Used
+Frontend: React, Axios, HTML, CSS
+
+Backend: Node.js, Express
+
+Database: MongoDB Atlas (Cloud-hosted)
+
+Tooling: Visual Studio Code, Concurrently, VS Code Tasks
+
+------------------------------------------------------------------------------------------------------------------------------------------
+
+🧠 How the Application Works (Flow Explained in Detail)
+User Interaction
+The user visits the frontend interface, where they find a simple, clean form with fields: Name, Email, Feedback Text, and a dropdown to select the feedback type.
+
+Submitting Feedback
+When the user submits the form, it triggers a POST request using Axios to the backend API route:
+POST /feedback
+
+Server Handling
+The backend (Express server) receives this data and uses Mongoose to validate and save the feedback into the MongoDB Atlas cloud database in a collection called feedbacks.
+
+Fetching Feedbacks
+On the right-hand side of the application, a dashboard fetches all feedbacks using:
+GET /feedback
+These are automatically updated whenever a new submission is made.
+
+Grouping Feedbacks by Type
+The dashboard groups all feedbacks into three categories:
+
+Suggestion
+
+Bug Report
+
+Feature Request
+
+Each group shows only relevant entries — and if no feedbacks exist in a category, a message is shown.
+
+Deleting Feedback
+Each feedback card has a “Delete” button. When clicked, it sends:
+DELETE /feedback/:id
+This removes the feedback from both the database and the UI in real time.
+
+Auto Refresh Flow
+After every submission or deletion, the frontend automatically triggers a refresh using React's state management so the dashboard always stays up-to-date.
+
+------------------------------------------------------------------------------------------------------------------------------------------
+
+🗂️ Folder & Code Structure
+I followed a modular structure with clear separation of frontend and backend:
+
+user-feedback-system/
+├── backend/
+│   ├── server.js          # Entry point
+│   ├── models/            # Mongoose schema
+│   ├── routes/            # API logic
+│   └── config/db.js       # MongoDB connection
+│
+├── frontend/
+│   └── src/
+│       ├── App.js         # Main layout
+│       ├── App.css        # Styling
+│       └── components/
+│           ├── FeedbackForm.js
+│           └── FeedbackDashboard.js
+
+------------------------------------------------------------------------------------------------------------------------------------------
+
+🔄 API Routes I Built
+Method	Endpoint	Purpose
+POST	/feedback	Submit new feedback
+GET	/feedback	Fetch all feedbacks
+DELETE	/feedback/:id	Delete a feedback by ID
+
+------------------------------------------------------------------------------------------------------------------------------------------
+
+🧩 Component Breakdown
+FeedbackForm.js
+Handles all form inputs using React useState, posts the data, resets on success, and notifies the parent to refresh dashboard.
+
+FeedbackDashboard.js
+Fetches all feedbacks on load and on refresh trigger, groups them by type, and maps them into styled cards. Also handles delete actions.
+
+------------------------------------------------------------------------------------------------------------------------------------------
+
+✨ Features I Added to Improve It
+Full side-by-side layout: Feedback form on left, dashboard on right
+
+Auto-refresh: New feedbacks appear immediately
+
+Category grouping: Each type shown separately
+
+Delete function with confirmation
+
+Clean and professional UI with HTML, CSS, and responsiveness
+
+One-click start using a custom package.json script and VS Code task
+
+------------------------------------------------------------------------------------------------------------------------------------------
+
+
+📌 In Summary (How I Designed It)
+I focused on building a clean, minimal, and fully functional full-stack application with:
+
+Modular and maintainable code
+
+Real-time updates
+
+Clean API layer
+
+MongoDB Atlas integration
+
+Professional UI and UX
+
+Zero manual refresh
