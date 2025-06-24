@@ -1,0 +1,197 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.input {
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+.btn {
+  padding: 10px;
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 15px;
+  margin-top: 15px;
+  background: #f9f9f9;
+}
+
+.tag {
+  display: inline-block;
+  background: #e0e0e0;
+  padding: 5px 10px;
+  border-radius: 6px;
+  margin-top: 5px;
+}
+
+.date {
+  font-size: 12px;
+  color: gray;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f2f5f7;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+h1 {
+  text-align: center;
+  margin: 20px 0;
+  color: #222;
+}
+
+form {
+  max-width: 600px;
+  background: #fff;
+  margin: auto;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.05);
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+input, textarea, select {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+button {
+  padding: 10px 15px;
+  background-color: #007bff;
+  border: none;
+  color: white;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+hr {
+  margin: 40px auto;
+  max-width: 600px;
+  border: 0;
+  border-top: 1px solid #ccc;
+}
+
+.dashboard {
+  max-width: 600px;
+  margin: auto;
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+}
+
+.card h4 {
+  margin: 0 0 5px 0;
+  color: #333;
+}
+
+.card p {
+  margin: 8px 0;
+  line-height: 1.4;
+}
+
+.card .tag {
+  display: inline-block;
+  background: #e0f0ff;
+  color: #007bff;
+  font-size: 0.8rem;
+  padding: 4px 8px;
+  border-radius: 6px;
+  margin-top: 5px;
+}
+
+.card .date {
+  font-size: 0.75rem;
+  color: #777;
+  margin-top: 10px;
+}
+
+.card button {
+  margin-top: 15px;
+  background-color: #e74c3c;
+  font-size: 0.9rem;
+  padding: 8px 12px;
+}
+
+.card button:hover {
+  background-color: #c0392b;
+}
+.container {
+  display: flex;
+  gap: 40px;
+  padding: 40px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.left-pane, .right-pane {
+  flex: 1;
+}
+
+.left-pane h1 {
+  margin-bottom: 20px;
+}
+
+.right-pane h2 {
+  margin-bottom: 15px;
+}
