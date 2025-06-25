@@ -73,6 +73,10 @@ Follow these steps to run the full-stack application in your local machine using
 - cd ..
 
 # START APPLICATION:
+- cd backend
+- node server.js
+
+- cd frontend (NEW TERMINAL)
 - npm start
 
 ---
