@@ -1,4 +1,4 @@
-# 🧠 User-Feedback-System-lia-plus - Full Stack App
+# 🧠 User-Feedback-System - Full Stack App
 ✨ Full-stack feedback system built using React, Node.js, Express, and MongoDB for Lia Plus SDE1 technical assignment.
 
 A professional full-stack feedback system built using **React**, **Node.js**, **Express**, and **MongoDB**. Users can submit feedback, view previous submissions, and categorize them into suggestions, bugs, or feature requests — all in a modern, responsive UI.
